@@ -5,35 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week One</title>
+    <link rel="stylesheet" href="./styles/styles1.css">
 </head>
 <body>
-    <article>
-        <a href="https://www.theserverside.com/info/evaluate">Evaluate</a>
+    <article class="containerArticle ">
+        <a href="https://www.theserverside.com/features" class="upperCase textTypeOne">Feature</a>
 
         <header>
             <h1>5 reasons why Java is still the best programming language</h1>
             <h2>Here's why Java is still the most popular programming language for everything from mobile development to enterprise and server-side applications that empower the middle tier.</h2>
             
-            <div>
-                <img src="./assets/mckenzie-cameron.png" alt="Cameron Mckenzie">
+            <div class="authorWrapper">
+                <div class="publisherWrapper">
+                    <img src="./assets/images/mckenzie-cameron.png" class="roundImg" alt="Cameron Mckenzie">
+                    <span class="textTypeOne">By</span>  
+                    &nbsp;
+                    <a href="https://www.techtarget.com/contributor/Cameron-McKenzie?_gl=1*1swdk3l*_ga*MTQxOTg4MjgyMC4xNjMyMTgxNTY3*_ga_TQKE4GS5P9*MTYzMjE4MTU2NS4xLjEuMTYzMjE4MjcyNy4w&_ga=2.9493875.750238762.1632181567-1419882820.1632181567" class="authorLinkStyle">Cameron Mckenzie,</a>
+                    &nbsp;
+                    <span class="textTypeTwo">TechTarget</span>
+                </div>
                 <div>
-                    By <a href="https://www.techtarget.com/contributor/Cameron-McKenzie?_gl=1*1swdk3l*_ga*MTQxOTg4MjgyMC4xNjMyMTgxNTY3*_ga_TQKE4GS5P9*MTYzMjE4MTU2NS4xLjEuMTYzMjE4MjcyNy4w&_ga=2.9493875.750238762.1632181567-1419882820.1632181567">Cameron Mckenzie,</a>
-                    TechTarget
+                    <span class="textTypeOne">Published:</span>
+                    <strong><time datetime="2021-09-17 00:00:00-0400" class="dateTime">17 Sep 2021</time></strong>
                 </div>
             </div>
-    
-            <div>
-                Published: <strong><time datetime="2021-09-17 00:00:00-0400" pubdate>17 Sep 2021</time></strong>
-            </div>
-    
+        </header>
+        
+        <section class="sectionWrapper">
             <p>
                 A new, long-term support Java release is just around the corner. As Java passes the 25-year mark, let's step back and look at some of the reasons why Java remains the best programming language for modern software development.
             </p>
-        </header>
-
-        <section>
+            
             <h3>1. Java is easy to learn</h3>
-
             <p>
                 Every programming language comes with a learning curve, but Java shares many similarities with C, C++ and
                 <a href="https://www.theserverside.com/definition/JavaScript">JavaScript</a>. 
@@ -51,7 +54,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="sectionWrapper">
             <h3>2. The rich set of Java APIs</h3>
     
             <p>
@@ -75,29 +78,30 @@
                 The rich set of Java APIs available to developers aid in the development of strong, error-free applications.
             </p>
     
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Cft45c-F2XI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="780" height="440" src="https://www.youtube.com/embed/Cft45c-F2XI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
-        <section>
+        <section class="sectionWrapper">
             <h3>3. Java's tool ecosystem</h3>
 
             <p>
                 The application development landscape is filled with software development tools written in Java -- by Java developers -- that are designed to simplify and streamline the development, deployment and even decommissioning of Java applications. A few examples of tools written in Java include:
             </p>
 
-            <ul>
-                <li>Gradle: an incredibly powerful, open source build tool</li>
-                <li>Maven: an open source tool designed to solve dependency management problems</li>
-                <li>Jenkins: a Java-based continuous integration and delivery tool</li>
-            </ul>
+            <p>
+                <ul>
+                    <li>Gradle: an incredibly powerful, open source build tool</li>
+                    <li>Maven: an open source tool designed to solve dependency management problems</li>
+                    <li>Jenkins: a Java-based continuous integration and delivery tool</li>
+                </ul>
+            </p>
 
             <p>
                 This is by no means an exhaustive list of Java's tool ecosystem. Other examples of tools and technologies written in Java include application servers like Tomcat to Red Hat's popular, Kubernetes-native Java stack named Quarkus.
             </p>
 
             <figure>
-                <span>TechTarget</span>
-                <img src="./assets/java-features.png" alt="Java Features">
+                <img src="./assets/images/java-features.png" alt="Java Features" width="370">
                 <figcaption>Features of the Java programming language.</figcaption>
             </figure>
 
@@ -106,7 +110,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="sectionWrapper">
             <h3>4. First-order Android Support</h3>
             
             <p>
@@ -122,7 +126,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="sectionWrapper">
             <h3>5. Forward evolution with backwards compatibility</h3>
 
             <p>
@@ -148,7 +152,16 @@
             <p>
                 I personally compiled and packaged some complicated code that was written 20 years ago, and it ran without any issues on the latest Java 17 release. When enterprise clients know that things won't break when they perform a JVM upgrade, it gives just another reason why they choose to stick with Java as the best programming language.
             </p>
-        </section>  
+        </section>
+        <!-- Change News Buttons -->
+        <div class="otherNews">
+            <button class="changeNewBttn">
+                <a href="https://www.theserverside.com/feature/5-reasons-why-Java-is-still-the-best-programming-language" class="upperCase" target="_blank">Original new</a>
+            </button>
+            <button class="changeNewBttn">
+                <a href="./index2.html">Second New - Week Two</a>
+            </button>
+        </div>
     </article>
 </body>
 </html>
