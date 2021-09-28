@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-size: 1.32rem;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.navBar {
+    background-color: #101010;
+    padding: 20px 0 20px 15%;
+}
+
+.upperNav {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.upperNav li {
+    display: flex;
+    text-decoration: none;
+}
+
+.upperNav li a {
+    color: #F2F2F2;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 10px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    border-right: 1px solid #f2f2f279;
+}
+
+.upperNav li:last-child a {
+    border: none;
+}
+
+.navBarWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.cbsLogo {
+    background-color: #101010;
+    width: 150px;
+    height: 20px;
+}
+
+.menuWrapper {
+    margin-left: 50px;
+}
+
+.menuWrapper a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: 700;
+    font-size: .88rem;
+    line-height: 2.22;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.menuWrapper a::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 5px);
+    width: 4px;
+    height: 4px;
+    margin-left: 10px;
+    color: #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    transform: rotate(45deg);
+}
+
+.navBarButton {
+    font-family: "Proxima Nova",sans-serif;
+    font-size: .82rem;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: .3px;
+    height: 30px;
+    line-height: 30px;
+    width: 54px;
+    border-radius: 3px;
+    background-color: #3F89C9;
+    text-align: center;
+    color: #F2F2F2;
+    border: none;
+    margin-left: 80px;
+}
+
+.navBarButton:hover {
+    background-color: #1766B9;
+}
+
+.containerArticle {
+    background-color: #101010;
+    height: 320px;
+    padding-top: 20px;
+}
+
+.contentHeader {
+    width: 1320px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: auto;
+    padding-left: 160px;
+    padding-right: 80px;
+}
+
+.articleHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #F2F2F2;
+    padding-bottom: 44px;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: 0;
+    font-family: "Publico Headline",serif;
+    border-bottom: 1px solid #f2f2f23d;
+}
+
+.articleInfo {
+    margin-top: 15px;
+}
+
+.articleInfo p {
+    color: #F2F2F2;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.6px;
+}
+
+.articleInfoWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerArtBttn {
+    background-color: #101010;
+    border: 1px solid rgba(242,242,242,0.5);
+    border-radius: 3px;
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-top: 12px;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    width: 225px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerSMedia ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 12px;
+}
+
+.headerSMedia ul li a img {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+/* Section Article Content */
+.articleContent {
+    width: 1320px;
+    padding-left: 160px;
+    margin: 40px auto 30px auto;
+}
+
+.articleContent .textBlock {
+    width: 866px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.textBlock:last-child {
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.textBlock a {
+    color: #101010;
+}
+
+/* Images */
+.imgBox {
+    width: 866px;
+    height: auto;
+}
+
+.epigraph {
+    width: 866px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #7F7F7F;
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 1.2rem;
+}
+
+/* twitter */
+.tweet {
+    margin: 10px auto 20px auto;
+    width: 866px;
+}
+
+/* Change News Buttons */
+.otherNews{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 866px;
+    margin: 20px auto 50px auto;
+    gap: 30px
+}
+
+.changeNewBttn {
+    background-color: #101010;
+    border: 2px solid #F2F2F2;
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+}
+
+.changeNewBttn a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
